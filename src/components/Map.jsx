@@ -8,6 +8,9 @@ import {
 } from "react-simple-maps";
 
 const Map = () => {
+  let currentWorkingDirectory = process.cwd();
+  console.log(currentWorkingDirectory);
+
   return (
     <ComposableMap
       projection="geoAzimuthalEqualArea"
