@@ -9,7 +9,7 @@ import {
 
 const Map = () => {
   let currentWorkingDirectory = process.cwd();
-  console.log(currentWorkingDirectory);
+  console.log("Current : " + currentWorkingDirectory);
 
   return (
     <ComposableMap
