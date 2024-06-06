@@ -19,7 +19,7 @@ const Map = () => {
       style={{width:"100%",height:"100%"}}
     >
       <Geographies
-        geography="https://github.com/junker530/MyProfilePage/blob/main/docs/img/jpn_admbnda_adm1_2019.topojson"
+        geography="./docs/img/jpn_admbnda_adm1_2019.topojson"
         fill="#1D0542"
         stroke="#FFFFFF"
         strokeWidth={0.8}
