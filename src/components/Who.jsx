@@ -1,8 +1,8 @@
+import { OrbitControls } from '@react-three/drei'
+import { Canvas } from '@react-three/fiber'
 import React from 'react'
 import styled from 'styled-components'
-import { Canvas} from '@react-three/fiber'
 import Cube from "./Cube"
-import {OrbitControls, ContactShadows} from '@react-three/drei'
 
 const Section = styled.div`
   height: 100vh;
@@ -91,7 +91,7 @@ const Who = () => {
           <Title>Think. Make. Solve.</Title>
           <WhatWeDo>
             <Line src="./img/line.png"/>
-            <Subtitle>テスト</Subtitle>
+            <Subtitle>Who I Am</Subtitle>
           </WhatWeDo>
           <Desc>
             an engineer with passion for creating interesting things
