@@ -1,14 +1,18 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
 import Development from './Development';
-import ProductDesign from './ProductDesign';
+import AI from './AI'
+import Teleoperation from './Teleoperation';
+import Telepresence from './Telepresence';
+import Videogame from './Videogame';
 import WebDesign from './WebDesign';
 
+
 const data = [
-  "Application",
   "AI",
   "Teleoperation",
   "Telepresence",
+  "Videogame",
   "Web Design",
 ];
 
@@ -29,6 +33,10 @@ const Section = styled.div`
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
+  position: relative;
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
 `
 const Container = styled.div`
   width: 1400px;
@@ -85,22 +93,34 @@ const ListItem = styled.li`
 
 const Right = styled.div`
   flex: 1;
+
 `
 
 const Works = () => {
-  const [work,setWork] = useState("WebDeign")
+  const [work,setWork] = useState("AI")
   return (
     <Section>
       <Container>
         <Left>
           <List>
               {data.map((item,index)=>(
-                <ListItem key={item} text={item} index={index} onClick={(event)=>window.location.href=url[index]}>{item}</ListItem>
+                //<ListItem key={item} text={item} index={index} onClick={(event)=>window.location.href=url[index]}>{item}</ListItem>
+                <ListItem key={item} text={item} index={index} onClick={()=>setWork(item)}>{item}</ListItem>
               ))}
           </List>
         </Left>
         <Right>
-            {work === "Web Design" ? (<WebDesign/>) : work === "Development" ? (<Development/>) : (<ProductDesign/>)}
+            {work === "AI" ? (
+              <AI/>
+            ) : work === "Teleoperation" ? (
+              <Teleoperation/>
+            ) : work === "Telepresence" ? (
+              <Telepresence/>
+            ) : work === "Videogame" ? (
+              <Videogame/>
+            ) : (
+              <WebDesign/>
+            )}
         </Right>
       </Container>
     </Section>

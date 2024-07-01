@@ -1,8 +1,8 @@
 import { OrbitControls, Stage } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
+import Brain from './Brain'
 import styled from 'styled-components'
-import Reactlogo from './Reactlogo'
 
 const Desc = styled.div`
   width: 200px;
@@ -11,23 +11,24 @@ const Desc = styled.div`
   background-color: white;
   border-radius: 10px;
   position: absolute;
-  top: 100px;
   right: 50px;
+  top: 100px;
 `
-const WebDesign = () => {
+
+const AI = () => {
   return (
-  <>
+    <>
     <Canvas>
       <Stage environment="city" intensity={0.6}>
-        <Reactlogo/>
+        <Brain/>
       </Stage>
       <OrbitControls enableZoom={false}/>
     </Canvas>
     <Desc>
-    誰にとっても使いやすく、簡単に情報にありつけるWebデザインについて勉強中です。
+      学士、修士を通じて機械学習、深層学習、強化学習などAIを用いたソフトウェアを開発
     </Desc>
-  </>
+    </>
   )
 }
 
-export default WebDesign
+export default AI

@@ -2,7 +2,7 @@ import { OrbitControls, Stage } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
 import styled from 'styled-components'
-import Reactlogo from './Reactlogo'
+import Gamecon from './Gamecon'
 
 const Desc = styled.div`
   width: 200px;
@@ -14,20 +14,21 @@ const Desc = styled.div`
   top: 100px;
   right: 50px;
 `
-const WebDesign = () => {
+
+const Videogame = () => {
   return (
   <>
     <Canvas>
       <Stage environment="city" intensity={0.6}>
-        <Reactlogo/>
+        <Gamecon/>
       </Stage>
       <OrbitControls enableZoom={false}/>
     </Canvas>
     <Desc>
-    誰にとっても使いやすく、簡単に情報にありつけるWebデザインについて勉強中です。
+      遊ぶ楽しさと作る楽しさの両方を追求
     </Desc>
   </>
   )
 }
 
-export default WebDesign
+export default Videogame
