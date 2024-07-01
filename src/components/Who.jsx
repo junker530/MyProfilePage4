@@ -91,7 +91,7 @@ const Who = () => {
           <Title>Think. Make. Solve.</Title>
           <WhatWeDo>
             <Line src="./img/line.png"/>
-            <Subtitle>Who I Am</Subtitle>
+            <Subtitle>テスト</Subtitle>
           </WhatWeDo>
           <Desc>
             an engineer with passion for creating interesting things
