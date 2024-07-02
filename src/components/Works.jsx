@@ -17,11 +17,7 @@ const data = [
 ];
 
 const url = [
-  "https://www.google.co.jp/",
-  "https://www.google.co.jp/",
-  "https://www.interaction-ipsj.org/proceedings/2023/data/pdf/2P-67.pdf",
-  "https://x.gd/66ye8",
-  "https://www.google.co.jp/",
+
 ]
 
 const color =[
