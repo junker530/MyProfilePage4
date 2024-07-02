@@ -1,7 +1,6 @@
-import React, {useState} from 'react'
-import styled from 'styled-components'
-import Development from './Development';
-import AI from './AI'
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import AI from './AI';
 import Teleoperation from './Teleoperation';
 import Telepresence from './Telepresence';
 import Videogame from './Videogame';
@@ -15,10 +14,6 @@ const data = [
   "Videogame",
   "Web Design",
 ];
-
-const url = [
-
-]
 
 const color =[
   "#4158D0",
@@ -100,7 +95,6 @@ const Works = () => {
         <Left>
           <List>
               {data.map((item,index)=>(
-                //<ListItem key={item} text={item} index={index} onClick={(event)=>window.location.href=url[index]}>{item}</ListItem>
                 <ListItem key={item} text={item} index={index} onClick={()=>setWork(item)}>{item}</ListItem>
               ))}
           </List>
